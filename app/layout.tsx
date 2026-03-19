@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Inter } from "next/font/google";
+import { Geist, Geist_Mono, Inter, Outfit } from "next/font/google";
 import "./globals.css";
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
 
 
 
-const inter = Inter({ subsets: ["latin"] });
+
+const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
+const outfit = Outfit({ subsets: ['latin'], variable: '--font-outfit' });
+
 
 export const metadata: Metadata = {
   title: "CPCM Church | Welcome Home",
@@ -30,18 +31,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${inter.className} bg-slate-50 min-h-screen flex flex-col`}>
-        {/* 2. Add the Navbar at the top */}
-        <Navbar />
-
-        {/* 3. The 'children' is whatever specific page we are on (Home, About, etc.) */}
-        <div className="flex-grow">
-          {children}
-        </div>
-
-        {/* 4. Add the Footer at the bottom */}
-        <Footer />
+    <html lang="en" className={`${inter.variable} ${outfit.variable}`}>
+      <body className="antialiased selection:bg-primary-500 selection:text-white">
+        {children}
       </body>
     </html>
   );
