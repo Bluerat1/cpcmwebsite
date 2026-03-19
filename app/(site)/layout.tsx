@@ -1,5 +1,6 @@
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import FeedbackBox from '@/components/FeedbackBox';
 
 export default function SiteLayout({
   children,
@@ -12,6 +13,7 @@ export default function SiteLayout({
       <div className="flex-grow">
         {children}
       </div>
+      <FeedbackBox />
       <Footer />
     </div>
   );

@@ -61,7 +61,7 @@ export default function Footer() {
                         {/* Service times badge */}
                         <div className="inline-flex items-center gap-2.5 bg-white/5 border border-white/10 rounded-xl px-4 py-2.5">
                             <span className="w-2 h-2 rounded-full bg-amber-400 animate-pulse flex-shrink-0" />
-                            <span className="text-sm font-medium text-white">Sundays · 9:00 AM &amp; 11:00 AM</span>
+                            <span className="text-sm font-medium text-white">Sundays · 9:00 AM - 11:00 AM</span>
                         </div>
                     </div>
 
