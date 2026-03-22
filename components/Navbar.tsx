@@ -17,6 +17,7 @@ export default function Navbar() {
     const navLinks = [
         { href: '/', label: 'Home' },
         { href: '/about', label: 'About' },
+        { href: '/ministries', label: 'Ministries' },
         { href: '/sermons', label: 'Sermons' },
         { href: '/events', label: 'Events' },
     ];
@@ -48,8 +49,11 @@ export default function Navbar() {
                             <rect x="35" y="20" width="11" height="3" rx="1.5" />
                         </svg>
                         <div className="leading-tight">
-                            <span className="block text-white font-extrabold text-lg tracking-tight group-hover:text-amber-300 transition-colors duration-300">
+                            <span className="hidden md:block text-white font-extrabold text-lg tracking-tight group-hover:text-amber-300 transition-colors duration-300">
                                 Christian Partnership for the Confined Ministry Inc. <span className="text-amber-400">Church</span>
+                            </span>
+                            <span className="block md:hidden text-white font-extrabold text-xl tracking-tight group-hover:text-amber-300 transition-colors duration-300">
+                                CPCM <span className="text-amber-400">Church</span>
                             </span>
                             <span className="hidden sm:block text-white/50 text-xs tracking-wide">
                                 Cagayan De Oro City
@@ -70,10 +74,10 @@ export default function Navbar() {
                         ))}
 
                         <Link
-                            href="/give"
+                            href="/partner"
                             className="ml-2 bg-amber-500 text-white px-6 py-2.5 rounded-full font-bold text-sm hover:bg-amber-400 hover:shadow-lg hover:shadow-amber-500/40 hover:-translate-y-0.5 transition-all duration-300"
                         >
-                            Give
+                            Partner
                         </Link>
                     </div>
 
@@ -112,11 +116,11 @@ export default function Navbar() {
                     ))}
                     <div className="pt-2 pb-1">
                         <Link
-                            href="/give"
+                            href="/partner"
                             onClick={() => setMenuOpen(false)}
                             className="block text-center bg-amber-500 text-white px-6 py-3 rounded-full font-bold text-sm hover:bg-amber-400 transition-all duration-300"
                         >
-                            Give
+                            Partner
                         </Link>
                     </div>
                 </div>

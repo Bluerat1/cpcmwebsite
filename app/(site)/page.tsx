@@ -48,10 +48,10 @@ export default async function HomePage() {
         {/* Hero Content */}
         <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto space-y-8">
           <span className="inline-block py-1.5 px-5 rounded-full bg-amber-500/20 text-amber-300 text-sm font-semibold tracking-widest uppercase border border-amber-400/30 backdrop-blur-sm">
-            Welcome Home
+            Glorify Christ, Make Disciples
           </span>
 
-          <h1 className="text-5xl sm:text-6xl md:text-8xl font-extrabold text-white leading-tight tracking-tight drop-shadow-2xl">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-extrabold text-white leading-tight tracking-tight drop-shadow-2xl">
             Christian Partnership
             <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-orange-400 to-red-400">
@@ -59,7 +59,7 @@ export default async function HomePage() {
             </span>
           </h1>
 
-          <p className="text-lg sm:text-xl md:text-2xl text-slate-200 max-w-2xl mx-auto font-light leading-relaxed drop-shadow-md">
+          <p className="text-base sm:text-lg md:text-xl xl:text-2xl text-slate-200 max-w-2xl mx-auto font-light leading-relaxed drop-shadow-md">
             Spreading the love of Christ to the confined, the broken, and the lost — in Cagayan De Oro City.
           </p>
 
@@ -88,19 +88,55 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* ── WELCOME BANNER ── */}
-      <section className="bg-amber-500 py-12 px-4">
-        <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-white text-center md:text-left">
-          <div>
-            <h2 className="text-2xl md:text-3xl font-bold">Join Us This Sunday</h2>
-            <p className="text-white/80 mt-1">9:00 AM &amp; 11:00 AM · 3945 San Lucas Street, Cagayan De Oro City</p>
+      {/* ── SCHEDULES ── */}
+      <section className="bg-amber-500 py-24 px-4">
+        <div className="max-w-6xl mx-auto text-center space-y-8">
+          <div className="space-y-3">
+            <p className="text-sm font-bold tracking-widest text-amber-900 uppercase">Service Schedules</p>
+            <h2 className="text-4xl md:text-5xl font-extrabold text-white">Join Us Every Week</h2>
+            <div className="w-20 h-1 bg-amber-300 mx-auto rounded-full" />
           </div>
-          <Link
-            href="/contact"
-            className="flex-shrink-0 bg-white text-amber-600 px-8 py-3 rounded-full font-bold hover:bg-amber-50 transition-colors shadow-md"
-          >
-            Get Directions
-          </Link>
+          
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 text-amber-900 mt-16">
+            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20 text-white shadow-lg hover:-translate-y-2 transition-transform duration-300">
+              <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center mx-auto mb-6">
+                <svg className="w-6 h-6 text-amber-100" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              </div>
+              <h3 className="text-xl font-bold mb-3">Sunday Service</h3>
+              <p className="text-amber-100 text-lg mb-2 font-medium">9:00 AM &amp; 11:00 AM</p>
+              <p className="text-sm text-amber-50 mt-4 leading-relaxed">Main Worship Service<br/>in Cagayan De Oro City</p>
+            </div>
+            
+            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20 text-white shadow-lg hover:-translate-y-2 transition-transform duration-300">
+              <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center mx-auto mb-6">
+                <svg className="w-6 h-6 text-amber-100" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+              </div>
+              <h3 className="text-xl font-bold mb-3">Midweek Ministry</h3>
+              <p className="text-amber-100 text-lg mb-2 font-medium">[Time Placeholder]</p>
+              <p className="text-sm text-amber-50 mt-4 leading-relaxed">Midweek Service &amp; Prayer<br/>(Please replace placeholder)</p>
+            </div>
+            
+            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20 text-white shadow-lg hover:-translate-y-2 transition-transform duration-300 sm:col-span-2 md:col-span-1">
+              <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center mx-auto mb-6">
+                <svg className="w-6 h-6 text-amber-100" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              </div>
+              <h3 className="text-xl font-bold mb-3">Youth Gathering</h3>
+              <p className="text-amber-100 text-lg mb-2 font-medium">[Time Placeholder]</p>
+              <p className="text-sm text-amber-50 mt-4 leading-relaxed">Youth Ministry Fellowship<br/>(Please replace placeholder)</p>
+            </div>
+          </div>
+          
+          <div className="pt-10">
+            <Link
+              href="/contact"
+              className="inline-flex items-center gap-3 bg-white text-amber-600 px-10 py-4 rounded-full font-bold text-base hover:bg-amber-50 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+            >
+              Get Directions
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </Link>
+          </div>
         </div>
       </section>
 

@@ -90,7 +90,7 @@ export default function AboutPage() {
                 <div>
                   <h3 className="text-2xl font-bold text-slate-900 mb-4">Our Mission</h3>
                   <p className="text-slate-500 leading-relaxed">
-                    To lead people into a growing relationship with Jesus Christ — creating environments where people are encouraged and equipped to pursue intimacy with God, community with insiders, and influence with outsiders.
+                    [Please add your Mission Statement here.] To lead people into a growing relationship with Jesus Christ — creating environments where people are encouraged and equipped to pursue intimacy with God, community with insiders, and influence with outsiders.
                   </p>
                 </div>
               </div>
@@ -109,7 +109,7 @@ export default function AboutPage() {
                 <div>
                   <h3 className="text-2xl font-bold text-slate-900 mb-4">Our Vision</h3>
                   <p className="text-slate-500 leading-relaxed">
-                    To be a church that unchurched people love to attend — dreaming of a city transformed by the love of Jesus, where every neighborhood experiences the tangible grace and truth of the Gospel through our community.
+                    [Please add your Vision Statement here.] To be a church that unchurched people love to attend — dreaming of a city transformed by the love of Jesus, where every neighborhood experiences the tangible grace and truth of the Gospel through our community.
                   </p>
                 </div>
               </div>

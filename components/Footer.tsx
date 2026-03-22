@@ -6,6 +6,7 @@ export default function Footer() {
 
     const quickLinks = [
         { href: '/about', label: 'What to Expect' },
+        { href: '/ministries', label: 'Ministries' },
         { href: '/sermons', label: 'Watch Online' },
         { href: '/events', label: 'Events' },
         { href: '/contact', label: 'Contact Us' },
